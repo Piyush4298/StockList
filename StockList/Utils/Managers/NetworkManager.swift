@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol NetworkManagerProtocol {
+public protocol NetworkManagerProtocol {
     func fetchStocks(completion: @escaping (Result<[Stock], StockListError>) -> Void)
 }
 

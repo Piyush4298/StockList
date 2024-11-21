@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Stock: Decodable{
+public struct Stock: Codable{
     let symbol: String
     let quantity: Int
     let ltp: Double
@@ -15,10 +15,10 @@ struct Stock: Decodable{
     let close: Double
 }
 
-struct UserHolding: Decodable {
+public struct UserHolding: Codable {
     let userHolding: [Stock]
 }
 
-struct StockResponse: Decodable {
+public struct StockResponse: Codable {
     let data: UserHolding
 }

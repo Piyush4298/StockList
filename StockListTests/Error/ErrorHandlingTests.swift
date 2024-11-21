@@ -9,6 +9,7 @@ import XCTest
 @testable import StockList
 
 final class ErrorHandlingTests: XCTestCase {
+    
     func testStockListErrorNetworkError() {
         let error = StockListError.networkError("Connection failed")
         

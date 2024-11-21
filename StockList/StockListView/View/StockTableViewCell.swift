@@ -10,17 +10,17 @@ import UIKit
 final class StockTableViewCell: UITableViewCell {
     
     static let identifier = String(describing: StockTableViewCell.self)
-    private let containerView = UIView()
-    private let symbolLabel = UILabel()
-    private let quantityView = UIView()
-    private let quantityTitleLabel = UILabel()
-    private let quantityValueLabel = UILabel()
-    private let lastTradedPriceView = UIView()
-    private let lastTradedPriceTitleLabel = UILabel()
-    private let lastTradedPriceValueLabel = UILabel()
-    private let profitAndLossView = UIView()
-    private let profitAndLossTitleLabel = UILabel()
-    private let profitAndLossValueLabel = UILabel()
+    let containerView = UIView()
+    let symbolLabel = UILabel()
+    let quantityView = UIView()
+    let quantityTitleLabel = UILabel()
+    let quantityValueLabel = UILabel()
+    let lastTradedPriceView = UIView()
+    let lastTradedPriceTitleLabel = UILabel()
+    let lastTradedPriceValueLabel = UILabel()
+    let profitAndLossView = UIView()
+    let profitAndLossTitleLabel = UILabel()
+    let profitAndLossValueLabel = UILabel()
     
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

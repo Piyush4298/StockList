@@ -7,11 +7,11 @@
 
 import Foundation
 
-enum CoreDataError: LocalizedError, BaseErrorType {
+public enum CoreDataError: LocalizedError, BaseErrorType {
     case failedToSave
     case failedToFetch
     
-    var errorDescription: String {
+    public var errorDescription: String {
         switch self {
         case .failedToSave:
             return "Could not save data locally."

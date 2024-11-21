@@ -8,7 +8,7 @@
 import Foundation
 import CoreData
 
-protocol CoreDataManagerProtocol {
+public protocol CoreDataManagerProtocol {
     func saveStocks(_ stocks: [Stock]) -> CoreDataError?
     func fetchLocalStocks(completion: @escaping (Result<[Stock], CoreDataError>) -> Void)
 }

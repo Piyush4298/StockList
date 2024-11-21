@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum StockListError: LocalizedError, Equatable, BaseErrorType {
+public enum StockListError: LocalizedError, Equatable, BaseErrorType {
     
     case networkError(String)
     case invalidURL
@@ -16,7 +16,7 @@ enum StockListError: LocalizedError, Equatable, BaseErrorType {
     case serverError(Int)
     case unknown
     
-    var errorDescription: String {
+    public var errorDescription: String {
         switch self {
         case .networkError(let message):
             return "Network Error: \(message)"

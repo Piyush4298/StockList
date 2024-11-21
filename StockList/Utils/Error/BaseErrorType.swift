@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol BaseErrorType {
+public protocol BaseErrorType {
     var errorDescription: String { get }
 }
